@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDhe-gL5Cn7SflQjHiDsQQNO5TrRlie2I0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>553295037242</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.feedvibe</string>
+	<key>PROJECT_ID</key>
+	<string>feedvibe-98bef</string>
+	<key>STORAGE_BUCKET</key>
+	<string>feedvibe-98bef.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:553295037242:ios:62bc90f9b0b8bcf8994603</string>
+</dict>
+</plist>

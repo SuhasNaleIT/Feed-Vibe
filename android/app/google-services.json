@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "553295037242",
+    "project_id": "feedvibe-98bef",
+    "storage_bucket": "feedvibe-98bef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553295037242:android:ce0c5de8d9934fcc994603",
+        "android_client_info": {
+          "package_name": "com.example.feedvibe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo303BfmUxa0SXC0zpKEPkfm8gxdBgEXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
