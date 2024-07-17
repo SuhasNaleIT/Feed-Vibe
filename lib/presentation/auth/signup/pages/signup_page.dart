@@ -39,9 +39,7 @@ class SignupPage extends StatefulWidget {
   State<SignupPage> createState() => _SignupPageState();
 }
 
-
 class _SignupPageState extends State<SignupPage> {
-
   final emailController = TextEditingController();
   final userNameController = TextEditingController();
   final passwordController = TextEditingController();
@@ -85,6 +83,7 @@ class _SignupPageState extends State<SignupPage> {
                       if (state.status != null) {
                         debugPrint('User Created');
                         showCustomSnackbar(context, 'Signup Successful');
+                        context.read<SignupCubit>().clearState();
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute<void>(
@@ -98,7 +97,11 @@ class _SignupPageState extends State<SignupPage> {
                       if (state.failure != null) {
                         log(state.failure.toString());
                         context.read<SignupCubit>().clearState();
-
+                        emailController.clear();
+                        userNameController.clear();
+                        passwordController.clear();
+                        confirmPasswordController.clear();
+                        bioController.clear();
                         if (state.failure
                             is FirebaseAuthSignUpInvalidEmailFailure) {
                           showCustomSnackbar(context, 'Invalid Email');
