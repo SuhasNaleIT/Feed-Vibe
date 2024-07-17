@@ -40,8 +40,9 @@ class PostRepositoryImplementation implements PostRepository {
   Future<Either<Failure, List<PostEntity>>> getPost() async {
     try {
       final posts = await postRemoteDataSource.getPost();
+      final nonNullPosts = posts ?? [];
 
-      return Right<Failure, List<PostEntity>>(posts!);
+      return Right<Failure, List<PostEntity>>(nonNullPosts);
     } on SocketException {
       return Left<Failure, List<PostEntity>>(
         NoInternetConnectionFailure(),

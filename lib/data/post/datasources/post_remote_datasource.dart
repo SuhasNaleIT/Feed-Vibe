@@ -37,7 +37,7 @@ class PostRemoteDataSource {
     }
   }
 
-  Future<List<PostModel>?> getPost() async {
+  Future<List<PostModel>> getPost() async {
     try {
       QuerySnapshot querySnapshot = await _firestore
           .collection('posts')
@@ -48,14 +48,13 @@ class PostRemoteDataSource {
           .map((doc) => PostModel.fromJson(doc.data() as Map<String, dynamic>))
           .toList();
 
-      appLogger.d(
-          PostRemoteDataSource, 'Posts in Get Post Cubit: ${posts.first}');
+      appLogger.d(PostRemoteDataSource, 'Posts in Get Post DS: ${posts.first}');
       return posts;
     } catch (e) {
       print('Error creating post: $e');
       e.toString();
     }
-    return null;
+    return [];
   }
 
   Future<String?> createComment({
