@@ -4,6 +4,7 @@ import 'package:feedvibe/presentation/auth/cubits/get_user_data_from_cache/get_u
 import 'package:feedvibe/presentation/auth/login/pages/login_page.dart';
 import 'package:feedvibe/presentation/core/sized_boxes/sized_boxes.dart';
 import 'package:feedvibe/presentation/core/widgets/platform_circular_indicator.dart';
+import 'package:feedvibe/presentation/profile/pages/failure_page.dart';
 import 'package:feedvibe/presentation/profile/pages/my_posts_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -100,6 +101,19 @@ class _ProfilePageState extends State<ProfilePage> {
               },
               child: profileOptions(
                 title: 'My Posts',
+                icon: Icons.read_more_outlined,
+                context: context,
+              ),
+            ),
+            SizedBoxHeight15,
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const ShowFailurePage(),
+                ));
+              },
+              child: profileOptions(
+                title: 'Show Failure',
                 icon: Icons.read_more_outlined,
                 context: context,
               ),

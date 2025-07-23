@@ -5,7 +5,6 @@ import 'package:feedvibe/data/auth/datasources/auth_local_data_source.dart';
 import 'package:feedvibe/data/auth/models/app_user_model.dart';
 import 'package:feedvibe/presentation/auth/cubits/signup/user_data_holder.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 // import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';

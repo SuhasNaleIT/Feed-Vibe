@@ -5,7 +5,6 @@ import 'package:feedvibe/presentation/auth/cubits/login/login_cubit.dart';
 import 'package:feedvibe/presentation/auth/cubits/signup/signup_cubit.dart';
 import 'package:feedvibe/presentation/auth/login/pages/login_page.dart';
 import 'package:feedvibe/presentation/bottom_navigation_bar/cubits/index_holder_cubit.dart';
-import 'package:feedvibe/presentation/home/cubits/likes/likes_cubit.dart';
 import 'package:feedvibe/presentation/home/cubits/posts/posts_cubit.dart';
 import 'package:feedvibe/presentation/post/cubits/add_post/add_post_cubit.dart';
 import 'package:feedvibe/presentation/home/cubits/add_comment/add_comment_cubit.dart';
